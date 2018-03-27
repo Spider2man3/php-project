@@ -16,7 +16,7 @@ class Enemy {
     }
     
     public function attack($attack) {
-        if ($this->health = 0) {
+        if ($this->health <= 0) {
             return 'I am dead!';
         }
         else {
