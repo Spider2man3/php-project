@@ -6,7 +6,7 @@ class Enemy {
     public $strength;
     
     public function __construct($enemyName, $health = 100, $strength = 100) {
-        $this->enemyName = $eneryName;
+        $this->enemyName = $enemyName;
         $this->health = $health;
         $this->strength = $strength;
     }
