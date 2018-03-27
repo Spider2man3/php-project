@@ -12,8 +12,7 @@ class Enemy {
     }
     
     public function greet() {
-        echo 'Greet';
-        return 'Hello, my name is {$this->enemyName}. I will kill you with my {$this->strength} power and {$this->health} health.';
+        return 'Hello, my name is '.$this->enemyName.'. I will kill you with my '.$this->strength.' power and '.$this->health.' health.';
     }
     
     public function attack($attack) {
