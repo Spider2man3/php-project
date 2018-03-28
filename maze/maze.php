@@ -5,9 +5,10 @@
     </head>
     <body>
         <?php 
-            foreach (glob("*.php") as $filename) {
+            /*foreach (glob("*.php") as $filename) {
                 include $filename;
-            }
+            }*/
+            include ('enemy.php'); 
             
             $food = new Enemy('Foodie Monster', 50, 50);
             echo '<h1>Welcome to the LEAP Maze!</h1>';
