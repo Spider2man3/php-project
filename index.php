@@ -7,8 +7,8 @@
         <?php 
             echo '<h1>LEAP 0 PHP Project</h1>';
         ?>
-        <a href="maze.php">Maze Program</a>
+        <a href="maze/maze.php">Maze Program</a>
         <br/>
-        <a href="shine.php">Shine Program</a>
+        <a href="shine/shine.php">Shine Program</a>
     </body>
 </html>
