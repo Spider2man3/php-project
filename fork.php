@@ -12,7 +12,9 @@ class Fork {
         return $this->left;
     }
 
-    public funtion goRight() {
+    public function goRight() {
         return $this->right;
     }
 }
+
+?>
