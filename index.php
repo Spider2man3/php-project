@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Maze Project</title>
+		<title>LEAP 0 Project</title>
 	</head>
-	
 	<body>
         <?php 
-            include ('enemy.php'); 
-            $food = new Enemy('Foodie Monster', 50, 50);
-            echo $food->greet();
+            echo '<h1>LEAP 0 PHP Project</h1>';
         ?>
-	</body>
+        <a href="maze.php">Maze Program</a>
+        <br/>
+        <a href="shine.php">Shine Program</a>
+    </body>
 </html>
