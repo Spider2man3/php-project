@@ -5,10 +5,11 @@
 	</head>
 	<body>
         <?php 
-            echo '<h1>LEAP 0 PHP Project</h1>';
+            echo '<div style="margin-left:auto;margin-right:auto;width:80%">';
+                echo '<h1>LEAP 0 PHP Project</h1>';
+                echo '<a href="maze/maze.php">Maze Program</a><br/>';
+                echo '<a href="shine/shine.php">Shine Program</a>';
+            echo '</div>';
         ?>
-        <a href="maze/maze.php">Maze Program</a>
-        <br/>
-        <a href="shine/shine.php">Shine Program</a>
     </body>
 </html>
