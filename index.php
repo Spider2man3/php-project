@@ -5,7 +5,7 @@
 	</head>
 	<body>
         <?php 
-            echo '<div style="margin-left:auto;margin-right:auto;width:80%">';
+            echo '<div style="margin:auto;width:20%;text-align:center;position:relative;">';
                 echo '<h1>LEAP 0 PHP Project</h1>';
                 echo '<a href="maze/maze.php">Maze Program</a><br/>';
                 echo '<a href="shine/shine.php">Shine Program</a>';
