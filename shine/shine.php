@@ -5,8 +5,10 @@
     </head>
     <body>
         <?php 
-            echo '<h1>Welcome to the LEAP Shine!</h1>';
-            echo '<h3>By Adams Bala</h3>';
+            echo '<div style="margin:auto;width:20%;text-align:center;position:relative;">';
+                echo '<h1>Welcome to the LEAP Shine!</h1>';
+                echo '<h3>By Adams Bala</h3>';
+            echo '</div>'
         ?>
         <!-- Footer -->
         <footer>
