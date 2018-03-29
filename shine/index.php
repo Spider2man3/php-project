@@ -13,7 +13,7 @@
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
-            <a href="../maze/maze.php">Maze Project</a>
+            <a href="../maze/index.php">Maze Project</a>
         </footer>
 	</body>
 </html>

@@ -21,7 +21,7 @@
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
-            <a href="../shine/shine.php">Shine Project</a>
+            <a href="../shine/index.php">Shine Project</a>
         </footer>
 	</body>
 </html>
