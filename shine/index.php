@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Shine</title>
-        <script type="text/javascript" src="script.js"></script>
+
     </head>
     <body>
       <canvas id="myCanvas" style="background: white;"></canvas>
     <legend for="myCanvas"></legend>
-
+  <script type="text/javascript" src="script.js"></script>
         <?php
 
 
-$serverName = "10.14.2.76";
+$serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
 $password = "adamsbala";
@@ -23,7 +23,7 @@ $connectionInfo = array("Database"=>$dbname,
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 // Check connection
 if( $conn ) {
-     echo "Connection established.<br />";
+     //echo "Connection established.<br />";
    }else{
      echo "Connection could not be established.<br />";
      die( print_r( sqlsrv_errors(), true));
