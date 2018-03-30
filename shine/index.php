@@ -6,15 +6,14 @@
     <body>
         <?php
 
-            $serverName = "10.14.2.76";
+            $serverName = "localhost";
             $username = "adamsbala";
             $port = "1433";
             $password = "adamsbala";
             $dbname = "PHP";
             $connectionInfo = array("Database"=>$dbname,
                                     "UID"=>$username,
-                                    "PWD"=>$password,
-                                    "Port"=>$port);
+                                    "PWD"=>$password);
             // Create connection
             $conn = sqlsrv_connect($serverName, $connectionInfo);
             // Check connection
