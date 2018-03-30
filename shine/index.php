@@ -9,21 +9,43 @@
                 echo '<h1>Welcome to the LEAP Shine!</h1>';
                 echo '<h3>By Adams Bala</h3>';
             echo '</div>';
-            echo '<a>suckadick</a>';
-			// set up array of points for polygon
-$values = array(
-            40,  50,  // Point 1 (x, y)
-            20,  240, // Point 2 (x, y)
-            60,  60,  // Point 3 (x, y)
-            240, 20,  // Point 4 (x, y)
-            50,  40,  // Point 5 (x, y)
-            10,  10   // Point 6 (x, y)
-            );
 
-// create image
-$image = imagecreatetruecolor(250, 250);
+            //setting header to json
+  header('Content-Type: application/json');
 
+  //database
+  define('DB_HOST', 'DESKTOP-ULNPIAH\JUSTICEFORHARAMBE');
+  define('DB_USERNAME', '');
+  define('DB_PASSWORD', '');
+  define('DB_NAME', 'CPTR319SampleData');
 
+  //get connection
+  $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+  if(!$mysqli){
+  	die("Connection failed: " . $mysqli->error);
+  }
+
+  //query to get data from the table
+  $query = sprintf("select * from student");
+
+  //execute query
+  $result = $mysqli->query($query);
+
+  //loop through the returned data
+  $data = array();
+  foreach ($result as $row) {
+  	$data[] = $row;
+  }
+
+  //free memory associated with result
+  $result->close();
+
+  //close connection
+  $mysqli->close();
+
+  //now print the data
+  print json_encode($data);
         ?>
         <!-- Footer -->
         <footer>
