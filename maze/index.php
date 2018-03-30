@@ -8,10 +8,7 @@
         <div style="margin:auto;width:20%;text-align:center;position:relative;">
             <h1>Welcome to the LEAP Maze!</h1>
             <h3>By Thomas Manu</h3>
-            <!--<button type="button" onclick="foo()">Click</button>-->
-            <script type="text/javascript">
-                foo()
-            </script>
+            <button type="button" onclick="foo()">Click</button>
         </div>
         <!-- Footer -->
         <footer>
