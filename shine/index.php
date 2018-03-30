@@ -18,12 +18,12 @@ $connectionInfo = array( "UID"=>$username,
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-else {
-  echo "Connection successful";
-}
+if( $conn ) {
+     echo "Connection established.<br />";
+   }else{
+     echo "Connection could not be established.<br />";
+     die( print_r( sqlsrv_errors(), true));
+   }
 $sql = "SELECT * from student";
 $result = $conn->query($sql);
 
