@@ -29,11 +29,11 @@ if( $conn ) {
      die( print_r( sqlsrv_errors(), true));
    }
 $sql = "SELECT * from student";
-$result = $conn->query($sql);
+$result = sqlsrv_query($conn,$sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
+    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC) {
         echo "<br> ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "<br>";
     }
 } else {
