@@ -22,7 +22,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 else {
-  die("Connection successful");
+  echo "Connection successful";
 }
 $sql = "SELECT * from student";
 $result = $conn->query($sql);
