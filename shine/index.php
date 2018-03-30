@@ -14,7 +14,7 @@ $password = "adamsbala";
 $dbname = "PHP";
 $connectionInfo = array("Database"=>$dbname,
                         "UID"=>$username,
-                        "PWD"=>$password
+                        "PWD"=>$password,
                         "Port"=>$port);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
