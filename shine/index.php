@@ -9,8 +9,8 @@
 
 $serverName = "localhost";
 $port = "1433";
-$username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
-$password = "Qwerty";
+$username = "root";
+$password = "";
 $dbname = "CPTR319SampleData";
 $connectionInfo = array("Database"=>$dbname,
                         "UID"=>$username,
