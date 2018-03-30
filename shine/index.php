@@ -7,14 +7,16 @@
         <?php
 
 
-$servername = "10.14.2.76";
+$serverName = "10.14.2.76";
 $port = "1433";
 $username = "adamsbala";
 $password = "adamsbala";
 $dbname = "PHP";
-
+$connectionInfo = array( "UID"=>$username,
+                         "PWD"=>$password,
+                         "Database"=>$dbname);
 // Create connection
-$conn = sqlsrv_connect($servername, $username, $password, $dbname);
+$conn = sqlsrv_connect($serverName, $connectionInfo);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
