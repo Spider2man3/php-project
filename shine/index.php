@@ -4,6 +4,7 @@
         <title>Shine</title>
     </head>
     <body>
+        <h1>Database below</h1>
         <?php
 
             $serverName = "localhost";
@@ -28,7 +29,7 @@
             } else {
                 // output data of each row
                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-                    echo "<br> id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL;
+                    echo "id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL;
                 }
             }
 
