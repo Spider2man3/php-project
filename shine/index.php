@@ -11,7 +11,13 @@ $servername = "10.14.2.76";
 $username = "adamsbala";
 $password = "adamsbala";
 $dbname = "PHP";
-
+$dbh = new PDO ("dblib:host=$servername:$port;dbname=$dbname","$username","$password");
+$stmt = $dbh->prepare("SELECT * from student");
+  $stmt->execute();
+  while ($row = $stmt->fetch()) {
+    print_r($row);
+  }
+  unset($dbh); unset($stmt);
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
