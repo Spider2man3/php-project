@@ -9,7 +9,9 @@
             <h1>Welcome to the LEAP Maze!</h1>
             <h3>By Thomas Manu</h3>
             <!--<button type="button" onclick="foo()">Click</button>-->
-            <script>foo()</script>
+            <script type="text/javascript">
+                foo()
+            </script>
         </div>
         <!-- Footer -->
         <footer>
