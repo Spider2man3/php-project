@@ -7,7 +7,7 @@
         <?php
 
 
-$servername = "DESKTOP-ULNPIAH\SQLEXPRESS";
+$servername = "localhost";
 $username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
 $password = "Qwerty";
 $dbname = "CPTR319SampleData";
