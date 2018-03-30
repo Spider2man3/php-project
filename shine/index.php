@@ -12,9 +12,9 @@ $port = "1433";
 $username = "adamsbala";
 $password = "adamsbala";
 $dbname = "PHP";
-$connectionInfo = array( "UID"=>$username,
-                         "PWD"=>$password,
-                         "Database"=>$dbname);
+$connectionInfo = array("Database"=>$dbname,
+                        "UID"=>$username,
+                        "PWD"=>$password);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 // Check connection
