@@ -7,10 +7,10 @@
         <?php
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "CPTR319SampleData";
+$servername = "10.14.2.76";
+$username = "adamsbala";
+$password = "adamsbala";
+$dbname = "PHP";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
