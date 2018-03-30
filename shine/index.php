@@ -9,7 +9,7 @@
 
 $servername = "localhost";
 $username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
-$password = "";
+$password = "Qwerty";
 $dbname = "CPTR319SampleData";
 
 // Create connection
