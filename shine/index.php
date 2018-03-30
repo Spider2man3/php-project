@@ -5,10 +5,7 @@
     </head>
     <body>
         <?php
-            echo '<div style="margin:auto;width:20%;text-align:center;position:relative;">';
-                echo '<h1>Welcome to the LEAP Shine!</h1>';
-                echo '<h3>By Adams Bala</h3>';
-            echo '</div>';
+
 
   //setting header to json
   header('Content-Type: application/json');
