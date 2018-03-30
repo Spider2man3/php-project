@@ -9,7 +9,7 @@
 
 $servername = "DESKTOP-ULNPIAH\SQLEXPRESS";
 $username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
-$password = "Qwerty"
+$password = "Qwerty";
 $dbname = "CPTR319SampleData";
 
 // Create connection
