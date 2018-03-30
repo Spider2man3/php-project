@@ -8,6 +8,7 @@
       <canvas id="myCanvas" style="background: white;"></canvas>
     <legend for="myCanvas"></legend>
   <script type="text/javascript" src="script.js"></script>
+
         <?php
 
 
@@ -36,7 +37,7 @@ if( $conn ) {
                } else {
                    // output data of each row
                    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-                       echo ("<p>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p>");
+                       echo ("<div style='display:none;'>". "<div>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p></div>");
                    }
                }
 
