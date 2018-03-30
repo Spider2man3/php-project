@@ -8,8 +8,8 @@
 
 
 $servername = "DESKTOP-ULNPIAH\SQLEXPRESS";
-
-//$dbname = "PHP";
+$username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
+$password = "Qwerty"
 $dbname = "CPTR319SampleData";
 
 // Create connection
