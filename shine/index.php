@@ -4,7 +4,6 @@
         <title>Shine</title>
     </head>
     <body>
-        <h1>Database below</h1>
         <?php
 
             $serverName = "localhost";
@@ -23,8 +22,6 @@
 
             $sql = "SELECT * from student";
             $result = sqlsrv_query($conn, $sql);
-
-            echo "<p>Reading data from database...</p>";
             if ($result == FALSE) {
                 echo "0 results <br>";
             } else {
