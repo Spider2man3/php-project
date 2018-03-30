@@ -8,7 +8,6 @@
 
             $serverName = "localhost";
             $username = "adamsbala";
-            $port = "1433";
             $password = "adamsbala";
             $dbname = "PHP";
             $connectionInfo = array("Database"=>$dbname,
@@ -17,12 +16,10 @@
             // Create connection
             $conn = sqlsrv_connect($serverName, $connectionInfo);
             // Check connection
-            if( $conn ) {
-                echo "Connection established.<br />";
-            }else{
-                echo "Connection could not be established.<br />";
+            if($conn == FALSE) {
                 die( print_r( sqlsrv_errors(), true));
             }
+
             $sql = "SELECT * from student";
             $result = sqlsrv_query($conn, $sql);
 
