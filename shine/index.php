@@ -8,7 +8,7 @@
 
 
   //setting header to json
-  $servername = "10.14.2.76";
+$servername = "14.0.3015";
 $username = "adamsbala";
 $password = "adamsbala";
 $dbname = "PHP";
