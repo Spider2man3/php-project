@@ -7,7 +7,7 @@
         <?php
 
 
-$servername = "localhost/DESKTOP-ULNPIAH\SQLEXPRESS";
+$servername = "DESKTOP-ULNPIAH\SQLEXPRESS";
 
 //$dbname = "PHP";
 $dbname = "CPTR319SampleData";
