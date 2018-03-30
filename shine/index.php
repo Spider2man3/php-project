@@ -8,12 +8,12 @@
 
 
 $servername = "localhost";
-$username = "root";
-
+$username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
+$password = "";
 $dbname = "CPTR319SampleData";
 
 // Create connection
-$conn = new mysqli($servername, $username,  $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
