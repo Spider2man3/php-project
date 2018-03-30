@@ -8,8 +8,8 @@
 
 
 $servername = "localhost";
-$username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
-$password = "Qwerty";
+$username = "root";
+$password = "";
 $dbname = "CPTR319SampleData";
 
 // Create connection
