@@ -24,18 +24,17 @@
                 die( print_r( sqlsrv_errors(), true));
             }
             $sql = "SELECT * from student";
-            $result = $conn->query($sql);
+            $result = sqlsrv_query($conn, $sql);
 
-            if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) {
-                    echo "<br> id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . "<br>";
-                }
+            if ($result == FALSE) {
+                echo "0 results".PHP_EOL;
             } else {
-                echo "0 results";
+                // output data of each row
+                while($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+                    echo "<br> id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL;
+                }
             }
 
-            //$conn->close();
         ?>
         <!-- Footer -->
         <footer>
