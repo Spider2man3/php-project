@@ -12,7 +12,7 @@
             $password = "adamsbala";
             $dbname = "PHP";
             $connectionInfo = array("Database"=>$dbname,
-                                    "UID"=>$username,
+                                    "Uid"=>$username,
                                     "PWD"=>$password);
             // Create connection
             $conn = sqlsrv_connect($serverName, $connectionInfo);
@@ -35,7 +35,7 @@
                 echo "0 results";
             }*/
 
-            $conn->close();
+            //$conn->close();
         ?>
         <!-- Footer -->
         <footer>
