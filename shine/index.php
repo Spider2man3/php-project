@@ -23,7 +23,7 @@
                 echo "Connection could not be established.<br />";
                 die( print_r( sqlsrv_errors(), true));
             }
-            /*$sql = "SELECT * from student";
+            $sql = "SELECT * from student";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -33,7 +33,7 @@
                 }
             } else {
                 echo "0 results";
-            }*/
+            }
 
             //$conn->close();
         ?>
