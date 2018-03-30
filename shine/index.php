@@ -30,7 +30,7 @@
             } else {
                 // output data of each row
                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-                    echo ("id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL);
+                    echo ("<p>id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . "</p>");
                 }
             }
 
