@@ -8,41 +8,31 @@
 
 
   //setting header to json
-  header('Content-Type: application/json');
+  $servername = "10.14.2.76";
+$username = "adamsbala";
+$password = "adamsbala";
+$dbname = "PHP";
 
-  //database
-  define('DB_HOST', '10.14.2.76');
-  define('DB_USERNAME', 'adamsbala');
-  define('DB_PASSWORD', 'adamsbala');
-  define('DB_NAME', 'PHP');
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-  //get connection
-  $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
 
-  if(!$mysqli){
-  	die("Connection failed: " . $mysqli->error);
-  }
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
 
-  //query to get data from the table
-  $query = sprintf("select * from student");
-
-  //execute query
-  $result = $mysqli->query($query);
-
-  //loop through the returned data
-  $data = array();
-  foreach ($result as $row) {
-  	$data[] = $row;
-  }
-
-  //free memory associated with result
-  $result->close();
-
-  //close connection
-  $mysqli->close();
-
-  //now print the data
-  print json_encode($data);
+$conn->close();
         ?>
         <!-- Footer -->
         <footer>
