@@ -10,14 +10,14 @@
                 echo '<h3>By Adams Bala</h3>';
             echo '</div>';
 
-            //setting header to json
+  //setting header to json
   header('Content-Type: application/json');
 
   //database
-  define('DB_HOST', 'DESKTOP-ULNPIAH\JUSTICEFORHARAMBE');
-  define('DB_USERNAME', '');
-  define('DB_PASSWORD', '');
-  define('DB_NAME', 'CPTR319SampleData');
+  define('DB_HOST', '10.14.2.76');
+  define('DB_USERNAME', 'adamsbala');
+  define('DB_PASSWORD', 'adamsbala');
+  define('DB_NAME', 'PHP');
 
   //get connection
   $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
