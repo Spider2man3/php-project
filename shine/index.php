@@ -24,12 +24,13 @@
             $sql = "SELECT * from student";
             $result = sqlsrv_query($conn, $sql);
 
+            echo "<p>Reading data from database...</p>";
             if ($result == FALSE) {
                 echo "0 results".PHP_EOL;
             } else {
                 // output data of each row
                 while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-                    echo "id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL;
+                    echo ("id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . PHP_EOL);
                 }
             }
 
