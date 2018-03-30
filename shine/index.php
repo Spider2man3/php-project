@@ -7,11 +7,11 @@
         <?php
 
 
-$serverName = "10.14.2.76";
+$serverName = "localhost";
 $port = "1433";
-$username = "adamsbala";
-$password = "adamsbala";
-$dbname = "PHP";
+$username = "DESKTOP-ULNPIAH\JUSTICEFORHARAMBE";
+$password = "Qwerty";
+$dbname = "CPTR319SampleData";
 $connectionInfo = array("Database"=>$dbname,
                         "UID"=>$username,
                         "PWD"=>$password);
