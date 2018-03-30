@@ -4,6 +4,9 @@
         <title>Shine</title>
     </head>
     <body>
+      <canvas id="myCanvas" style="background: white;"></canvas>
+    <legend for="myCanvas"></legend>
+    <script type="text/javascript" src="script.js"></script>
         <?php
 
 
@@ -14,8 +17,7 @@ $password = "adamsbala";
 $dbname = "PHP";
 $connectionInfo = array("Database"=>$dbname,
                         "UID"=>$username,
-                        "PWD"=>$password,
-                        "Port"=>$port);
+                        "PWD"=>$password);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 // Check connection
@@ -31,7 +33,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["ID"]. " - Name: ". $row["name"]. " " . $row["dept_name"] . "<br>";
+        echo "<br> ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "<br>";
     }
 } else {
     echo "0 results";
