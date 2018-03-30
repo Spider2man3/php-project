@@ -9,6 +9,7 @@
             <h1>Welcome to the LEAP Maze!</h1>
             <h3>By Thomas Manu</h3>
             <button type="button" onclick="foo()">Click</button>
+            <p id="demo">AJAX should change this</p>
         </div>
         <!-- Footer -->
         <footer>

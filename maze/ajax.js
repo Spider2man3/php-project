@@ -1,11 +1,10 @@
 function foo() {
-    /*$.ajax({
-      url:"test.php", //the page containing php script
-      type: "POST", //request type
-      success:function(result){
-       alert(result);
-     }
-   });*/
-   var person = { name: 'Joe Blow' };
-   document.write(person.name);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "test.php", true);
+    xhttp.send();
 }
