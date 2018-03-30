@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Shine</title>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
       <canvas id="myCanvas" style="background: white;"></canvas>
     <legend for="myCanvas"></legend>
-    <script type="text/javascript" src="script.js"></script>
+
         <?php
 
 
