@@ -2,22 +2,15 @@
 <html>
     <head>
         <title>Maze</title>
+        <script type="text/javascript" src="ajax.js"></script>
     </head>
     <body>
-        <?php 
-            /*foreach (glob("*.php") as $filename) {
-                include $filename;
-            }*/
-            include ('enemy.php'); 
-            
-            $food = new Enemy('Foodie Monster', 50, 50);
-
-            echo '<div style="margin:auto;width:20%;text-align:center;position:relative;">';
-                echo '<h1>Welcome to the LEAP Maze!</h1>';
-                echo '<h3>By Thomas Manu</h3>';
-                echo $food->greet();
-            echo '</div>'
-        ?>
+        <div style="margin:auto;width:30%;text-align:center;position:relative;">
+            <h1>Welcome to the LEAP Maze!</h1>
+            <h3>By Thomas Manu</h3>
+            <button type="button" onclick="foo()">Click</button>
+            <p id="demo">AJAX should change this</p>
+        </div>
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
