@@ -60,7 +60,7 @@ Order by dept_name";
                foreach ($values as $key => $value) {
                    $values[$key] = $value;
                }
-               $array = array_combine(array_map('ucfirst', array_keys($values)), $values);
+               $array = array_combine(array_keys($values), $values);
                echo "<pre>";
                print_r($values);
                echo "<pre>";
