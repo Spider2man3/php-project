@@ -46,6 +46,12 @@ pivot
                }
                echo "<pre>";
                print_r($list);
+               foreach ($list as $item => $array) {
+                 foreach ($array as $key => $value) {
+                   echo $key;
+                   echo $value;
+                 }
+               }
                $values=array(
                    "Jan" => 110,
                    "Feb" => 130,
