@@ -58,13 +58,12 @@ Order by dept_name";
                $list = array();
 
                foreach ($values as $key => $value) {
-                    $value = $values['dept_name'];
+                    $values[$value]= $values['dept_name'];
                }
-               $array = array_combine(array_keys($values), $values);
+
                echo "<pre>";
                print_r($values);
-               echo "<pre>";
-               print_r($array);
+
                $img_width=450;
                $img_height=300;
                $margins=20;
