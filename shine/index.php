@@ -1,11 +1,5 @@
-<html>
-<head>
-<title>Shine</title>
-</head>
-<body>
 <?php
 header("Content-type:image/png");
-
 $serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
@@ -14,10 +8,8 @@ $dbname = "PHP";
 $connectionInfo = array("Database"=>$dbname,
                         "UID"=>$username,
                         "PWD"=>$password);
-// Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
- $list = array();
-// Check connection
+$list = array();
 if( $conn ) {
      //echo "Connection established.<br />";
    }
@@ -130,10 +122,3 @@ pivot
               imagepng($img);
               $_REQUEST['asdfad']=234234;
 ?>
-        <!-- Footer -->
-        <footer>
-            <a href="C:/wamp64/www/index.php">Home</a>
-            <a href="C:/wamp64/www/maze/index.php">Maze Project</a>
-        </footer>
-	</body>
-</html>
