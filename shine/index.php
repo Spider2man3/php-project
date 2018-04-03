@@ -114,14 +114,15 @@ pivot
 
 
               echo ("<!DOCTYPE html>
-              <html>
+                  <html>
                   <head>
                       <title>Shine</title>
                   </head>
                   <body>
-<div>
-  <img src='")imagepng($img);
-echo ("'</div>
+                  <div>
+                  <img src='");
+             imagepng($img);
+              echo ("'</div>
                       <!-- Footer -->
                       <footer>
                           <a href='../index.php'>Home</a>
