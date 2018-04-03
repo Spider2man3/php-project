@@ -27,7 +27,7 @@ if( $conn ) {
      //echo "Connection established.<br />";
    }
    else{
-     echo "Connection could not be established.<br />";
+    // echo "Connection could not be established.<br />";
      die( print_r( sqlsrv_errors(), true));
    }
 
@@ -48,7 +48,7 @@ pivot
 ) piv;";
  $result = sqlsrv_query($conn, $sql);
                if ($result == FALSE) {
-                   echo "0 results <br>";
+                   //echo "0 results <br>";
                }
                else {
                    // output data of each row
@@ -131,7 +131,7 @@ pivot
                    imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
-        
+               header("Content-type:image/jpg");
                imagepng($img);
                $_REQUEST['asdfad']=234234;
 
