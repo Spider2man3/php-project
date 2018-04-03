@@ -88,7 +88,7 @@ Order by dept_name";
                # ------- Max value is required to adjust the scale -------
                $max_value=max($values);
                $key = array_search($max_value,$array);
-               $ratio= $graph_height / $max_value;
+               $ratio= $graph_height / $key;
 
 
                # -------- Create scale and draw horizontal lines  --------
