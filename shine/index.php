@@ -52,11 +52,12 @@ Order by dept_name";
                    // output data of each row
                    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
                     //   echo ("<div style='display:none;'>". "<div>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p></div>");
-                    $values[] = row;
+                    $values[] = $row;
                    }
                }
+echo "<pre>";
+print_r($values);
 
-       
 
 
         ?>
