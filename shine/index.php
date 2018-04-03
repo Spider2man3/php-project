@@ -46,8 +46,6 @@ if( $conn ) {
                }
 
        }
-       foreach($values['data'] as $result) {
-   echo $result['type'], '<br>';
 
 
         ?>
