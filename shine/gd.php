@@ -90,7 +90,7 @@ pivot
                # -------- Create scale and draw horizontal lines  --------
                $horizontal_lines=20;
                $horizontal_gap=$graph_height/$horizontal_lines;
-              echo $horizontal_lines;
+              echo "lol". $horizontal_lines . "lol";
                for($i=1;$i<=$horizontal_lines;$i++){
                    $y=$img_height - $margins - $horizontal_gap * $i ;
                    imageline($img,$margins,$y,$img_width-$margins,$y,$line_color);
