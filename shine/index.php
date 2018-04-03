@@ -58,11 +58,13 @@ Order by dept_name";
                $list = array();
 
                foreach ($values as $key => $value) {
-                  echo $values[$key] = $value;
+                   $values[$key] = $value;
                }
+               $array = array_combine(array_map('ucfirst', array_keys($values)), $values);
                echo "<pre>";
                print_r($values);
-
+               echo "<pre>";
+               print_r($array);
                $img_width=450;
                $img_height=300;
                $margins=20;
