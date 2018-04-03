@@ -59,13 +59,13 @@ Order by dept_name";
 
                foreach ($values as $key => $value) {
                     $values[$key]= $value;
-                    unset($values[$key]);
-                    echo "<pre>";
-                    print_r($values);
+
+
 
                }
-
-
+               $array = array_combine(array_map(array_values($array), array_keys($array)), $array);
+               echo "<pre>";
+               print_r($array);
 
                echo "<pre>";
                print_r($values);
