@@ -51,7 +51,7 @@ Order by dept_name";
                else {
                  $num = sqlsrv_num_rows($result);
                  if(sqlsrv_num_rows($result) > 0){
-                   while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
+                   while($row = sqlsrv_fetch_array($result)){
                      $values[] = $row;
                    }
                  }
