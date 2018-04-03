@@ -88,7 +88,7 @@ pivot
 
 
                # -------- Create scale and draw horizontal lines  --------
-               $horizontal_lines=7;
+               $horizontal_lines=11;
                $horizontal_gap=$graph_height/$horizontal_lines;
 
                for($i=1;$i<=$horizontal_lines;$i++){
