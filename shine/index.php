@@ -50,7 +50,7 @@ Order by dept_name";
                }
                else {
                  $num = mysql_num_rows($result);
-                 if(mysql_num_rows($result) > 0){
+                 if(sqlsrv_num_rows($result) > 0){
                    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                      $values[] = $row;
                    }
