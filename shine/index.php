@@ -54,6 +54,8 @@ pivot
                    $finalArray += [$key => $value];
                  }
                }
+               echo "<pre>";
+               print_r($finalArray);
                $values=array(
                    "Jan" => 110,
                    "Feb" => 130,
