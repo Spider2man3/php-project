@@ -33,17 +33,21 @@ if( $conn ) {
      die( print_r( sqlsrv_errors(), true));
    }
 
- $sql = "select Ratio.dept_name,Ratio.ratio
+ $sql = "select *
 from (
-	select department.dept_name, department.building, sum(credits) / instructorCount.total_instructor as ratio
+	select department.dept_name, sum(credits) / instructorCount.total_instructor as ratio
 	from department,course, (select department.dept_name, count(id) as total_instructor
 		from instructor,department
 		where instructor.dept_name = department.dept_name
 		group by department.dept_name) as instructorCount
 	where department.dept_name = course.dept_name and department.dept_name = instructorCount.dept_name
 	group by department.dept_name,building,instructorCount.total_instructor
-	) as Ratio
-Order by dept_name";
+	)  Ratio
+pivot
+(
+  max(ratio)
+  for dept_name in (Biology ,[Comp. Sci.],[Elec. Eng.],Finance,History,Music,Physics)
+) piv;";
  $result = sqlsrv_query($conn, $sql);
                if ($result == FALSE) {
                    echo "0 results <br>";
@@ -57,7 +61,7 @@ Order by dept_name";
                }
                $list = array_flip($values);
 
-              
+
                //$array = array_combine(array_map(array_values($values), array_keys($values)), $values);
                echo "<pre>";
                print_r($list);
