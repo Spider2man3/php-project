@@ -10,4 +10,4 @@
             <a href="../maze/index.php">Shine Project</a>
         </footer>
 	</body>
-</html>>
+</html>
