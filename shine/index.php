@@ -94,8 +94,8 @@ pivot
 
                # ------- Max value is required to adjust the scale -------
                $max_value=max($values);
-
-               $ratio= $graph_height / $max_value;
+               $key = array_search($max_value, $values);
+               $ratio= $graph_height / $key;
 
 
                # -------- Create scale and draw horizontal lines  --------
