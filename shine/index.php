@@ -111,25 +111,8 @@ pivot
                    imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
-
-
-              echo ("<!DOCTYPE html>
-                  <html>
-                  <head>
-                      <title>Shine</title>
-                  </head>
-                  <body>
-                  <div>
-                  <img src='");
+               echo ("<html><head></head><body><a>suck a dick!</a></body></html>");
              imagepng($img);
-              echo ("'</div>
-                      <!-- Footer -->
-                      <footer>
-                          <a href='../index.php'>Home</a>
-                          <a href='../maze/index.php'>Shine Project</a>
-                      </footer>
-                </body>
-              </html>");
               $_REQUEST['asdfad']=234234;
 
 ?>
