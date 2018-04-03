@@ -113,5 +113,5 @@ pivot
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
               imagepng($img);
-              imagedestroy($img);            
+              $_REQUEST['asdfad']=234234;
 ?>
