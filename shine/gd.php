@@ -54,7 +54,7 @@ pivot
 
                $img_width=450;
                $img_height=300;
-               $margins=7;
+               $margins=20;
 
 
                # ---- Find the size of graph by substracting the size of borders
@@ -88,7 +88,7 @@ pivot
 
 
                # -------- Create scale and draw horizontal lines  --------
-               $horizontal_lines=20;
+               $horizontal_lines=7;
                $horizontal_gap=$graph_height/$horizontal_lines;
 
                for($i=1;$i<=$horizontal_lines;$i++){
