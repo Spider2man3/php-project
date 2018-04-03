@@ -113,7 +113,7 @@ pivot
                }
 
             //  $imgTest = imagepng($img);
-              echo "<!<!DOCTYPE html>
+              echo ("<!<!DOCTYPE html>
               <html>
                   <head>
                       <title>Shine</title>
@@ -128,7 +128,7 @@ pivot
                           <a href='../maze/index.php'>Shine Project</a>
                       </footer>
                 </body>
-              </html>>";
+              </html>>");
               $_REQUEST['asdfad']=234234;
 
 ?>
