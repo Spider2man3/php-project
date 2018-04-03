@@ -1,6 +1,6 @@
 <?php
-function img() {
 header("Content-type:image/png");
+function img() {
 $serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
