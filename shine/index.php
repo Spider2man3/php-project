@@ -33,6 +33,7 @@ pivot
   max(ratio)
   for dept_name in (Biology ,[Comp. Sci.],[Elec. Eng.],Finance,History,Music,Physics)
 ) piv;";
+ $finalArray = array();
  $result = sqlsrv_query($conn, $sql);
                if ($result == FALSE) {
                    //echo "0 results <br>";
@@ -50,6 +51,7 @@ pivot
                  foreach ($array as $key => $value) {
                    echo $key;
                    echo $value;
+                   $finalArray += [$key => $value];
                  }
                }
                $values=array(
