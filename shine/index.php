@@ -131,7 +131,7 @@ pivot
                    imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
-               header("Content-type:image/jpg");
+        
                imagepng($img);
                $_REQUEST['asdfad']=234234;
 
