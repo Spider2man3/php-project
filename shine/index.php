@@ -112,8 +112,8 @@ pivot
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
 
-            //  $imgTest = imagepng($img);
-              echo ("<!<!DOCTYPE html>
+              $imgTest = imagepng($img);
+              echo ("<!DOCTYPE html>
               <html>
                   <head>
                       <title>Shine</title>
