@@ -49,7 +49,7 @@ Order by dept_name";
                    echo "0 results <br>";
                }
                else {
-                 $num = mysql_num_rows($result);
+                 $num = sql_num_rows($result);
                  if(sqlsrv_num_rows($result) > 0){
                    while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                      $values[] = $row;
