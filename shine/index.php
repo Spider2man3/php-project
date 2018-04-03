@@ -63,7 +63,7 @@ Order by dept_name";
 
 
                }
-               $array = array_combine(array_map(array_values($array), array_keys($array)), $array);
+               $array = array_combine(array_map(array_values($values), array_keys($values)), $values);
                echo "<pre>";
                print_r($array);
 
