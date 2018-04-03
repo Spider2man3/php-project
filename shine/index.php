@@ -33,7 +33,7 @@ pivot
   max(ratio)
   for dept_name in (Biology ,[Comp. Sci.],[Elec. Eng.],Finance,History,Music,Physics)
 ) piv;";
- $finalArray = array();
+ $values = array();
  $result = sqlsrv_query($conn, $sql);
                if ($result == FALSE) {
                    //echo "0 results <br>";
@@ -45,32 +45,13 @@ pivot
                     $list[] = $row;
                    }
                }
-               echo "<pre>";
-               print_r($list);
                foreach ($list as $item => $array) {
                  foreach ($array as $key => $value) {
                    echo $key;
                    echo $value;
-                   $finalArray += [$key => $value];
+                   $values += [$key => $value];
                  }
                }
-               echo "<pre>";
-               print_r($finalArray);
-               $values=array(
-                   "Jan" => 110,
-                   "Feb" => 130,
-                   "Mar" => 215,
-                   "Apr" => 81,
-                   "May" => 310,
-                   "Jun" => 110,
-                   "Jul" => 190,
-                   "Aug" => 175,
-                   "Sep" => 390,
-                   "Oct" => 286,
-                   "Nov" => 150,
-                   "Dec" => 196
-               );
-
             echo "<pre>";
             print_r($values);
 
