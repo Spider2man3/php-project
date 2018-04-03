@@ -59,12 +59,6 @@ pivot
                     $values[] = $row;
                    }
                }
-               $list = array_flip($values);
-
-
-               //$array = array_combine(array_map(array_values($values), array_keys($values)), $values);
-               echo "<pre>";
-               print_r($list);
 
                echo "<pre>";
                print_r($values);
