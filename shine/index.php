@@ -55,14 +55,12 @@ Order by dept_name";
                     $values[] = $row;
                    }
                }
-               $list = array();
+               $list = array_flip($values);
 
-               foreach ($values as $key => $value) {
-                    array_map($values[$key],$values[$value]);
-               }
-               $array = array_combine(array_map(array_values($values), array_keys($values)), $values);
+              
+               //$array = array_combine(array_map(array_values($values), array_keys($values)), $values);
                echo "<pre>";
-               print_r($array);
+               print_r($list);
 
                echo "<pre>";
                print_r($values);
