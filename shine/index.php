@@ -58,7 +58,7 @@ Order by dept_name";
                $list = array();
 
                foreach ($values as $key => $value) {
-                  $values[$value]['dept_name'] = $values[$value]['ratio'];
+                  echo $values[$value]['dept_name'];
                }
                echo "<pre>";
                print_r($values);
