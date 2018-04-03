@@ -4,7 +4,7 @@
         <title>Shine</title>
     </head>
     <body>
-<iframe src="gd.php"></iframe>
+<iframe src='<?php include 'gd.php'; img();?>'></iframe>
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
