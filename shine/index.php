@@ -5,11 +5,11 @@
 
     </head>
     <body>
-      <p>FUKC YOkjjU </p>
+
       <canvas id="myCanvas" style="background: white;"></canvas>
     <legend for="myCanvas"></legend>
   <script type="text/javascript" src="script.js"></script>
-  <a>FUKC YOjjjU </a>
+
         <?php
 
 
