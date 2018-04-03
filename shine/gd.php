@@ -17,7 +17,6 @@ if( $conn ) {
     // echo "Connection could not be established.<br />";
      die( print_r( sqlsrv_errors(), true));
    }
-   echo "<!DOCTYPE html><html><head></head><body><p>suck a dick!</p>";
 
  $sql = "select *
 from (
