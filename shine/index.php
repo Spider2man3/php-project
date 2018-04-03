@@ -87,7 +87,7 @@ Order by dept_name";
 
                # ------- Max value is required to adjust the scale -------
                $max_value=max($values);
-               $key = array_search($max_value,$array);
+               $key = array_search($max_value,$values);
                $ratio= $graph_height / $key;
 
 
