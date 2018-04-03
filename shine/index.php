@@ -5,7 +5,7 @@
         <script type="text/javascript" src="ajax.js"></script>
     </head>
     <body>
-           <?php include('gd.php') ?>
+           <?php include('gd.php'); ?>
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
