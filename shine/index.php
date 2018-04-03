@@ -56,6 +56,7 @@ Order by dept_name";
                    }
                }
 
+
                $img_width=450;
                $img_height=300;
                $margins=20;
@@ -86,7 +87,8 @@ Order by dept_name";
 
                # ------- Max value is required to adjust the scale -------
                $max_value=max($values);
-               $ratio= $graph_height/$max_value;
+               $key = array_search($max_value,$array);
+               $ratio= $graph_height / $max_value;
 
 
                # -------- Create scale and draw horizontal lines  --------
