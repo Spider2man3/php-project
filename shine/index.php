@@ -23,7 +23,7 @@ $connectionInfo = array("Database"=>$dbname,
                         "PWD"=>$password);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
- $values = array()
+ $values = array();
 // Check connection
 if( $conn ) {
      //echo "Connection established.<br />";
