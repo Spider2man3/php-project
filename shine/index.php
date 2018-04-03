@@ -23,7 +23,7 @@ $connectionInfo = array("Database"=>$dbname,
                         "PWD"=>$password);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
- $values = array();
+ $list = array();
 // Check connection
 if( $conn ) {
      //echo "Connection established.<br />";
@@ -56,10 +56,23 @@ pivot
                    // output data of each row
                   while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
                     //   echo ("<div style='display:none;'>". "<div>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p></div>");
-                    $values[] = $row;
+                    $list[] = $row;
                    }
                }
-
+               $values=array(
+                   "Jan" => 110,
+                   "Feb" => 130,
+                   "Mar" => 215,
+                   "Apr" => 81,
+                   "May" => 310,
+                   "Jun" => 110,
+                   "Jul" => 190,
+                   "Aug" => 175,
+                   "Sep" => 390,
+                   "Oct" => 286,
+                   "Nov" => 150,
+                   "Dec" => 196
+               );
                echo "<pre>";
                print_r($values);
 
