@@ -23,6 +23,7 @@ $connectionInfo = array("Database"=>$dbname,
                         "PWD"=>$password);
 // Create connection
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+ $values = array()
 // Check connection
 if( $conn ) {
      //echo "Connection established.<br />";
@@ -31,7 +32,7 @@ if( $conn ) {
      echo "Connection could not be established.<br />";
      die( print_r( sqlsrv_errors(), true));
    }
- $values = array()
+
  $sql = "select Ratio.dept_name,Ratio.ratio
 from (
 	select department.dept_name, department.building, sum(credits) / instructorCount.total_instructor as ratio
