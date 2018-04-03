@@ -1,16 +1,4 @@
-<!<!DOCTYPE html>
-<html>
-    <head>
-        <title>Shine</title>
-    </head>
-    <body>
 <?php  include 'gd.php';
 img();
+echo "<html><head></head><body><a>suck a dick!</a></body></html>"
 ?>
-        <!-- Footer -->
-        <footer>
-            <a href="../index.php">Home</a>
-            <a href="../maze/index.php">Shine Project</a>
-        </footer>
-	</body>
-</html>>
