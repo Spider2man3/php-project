@@ -50,7 +50,7 @@ Order by dept_name";
                }
                else {
                    // output data of each row
-                   while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+                   while($row = sqlsrv_fetch_assoc($result, SQLSRV_FETCH_ASSOC)) {
                     //   echo ("<div style='display:none;'>". "<div>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p></div>");
                     $values[] = $row;
                    }
@@ -74,6 +74,7 @@ Order by dept_name";
 
 
                # -------  Define Colors ----------------
+            //   $bar_color=imagecolorallocate($img,0,64,128);
                $bar_color=imagecolorallocate($img,0,64,128);
                $background_color=imagecolorallocate($img,240,240,255);
                $border_color=imagecolorallocate($img,200,200,200);
@@ -87,8 +88,8 @@ Order by dept_name";
 
                # ------- Max value is required to adjust the scale -------
                $max_value=max($values);
-               $key = array_search($max_value,$values);
-               $ratio= $graph_height / $key;
+
+               $ratio= $graph_height / $max_value;
 
 
                # -------- Create scale and draw horizontal lines  --------
@@ -110,8 +111,8 @@ Order by dept_name";
                    list($key,$value)=each($values);
                    $x1= $margins + $gap + $i * ($gap+$bar_width) ;
                    $x2= $x1 + $bar_width;
-                   $y1=$margins +$graph_height- intval($value * $ratio) ;
-                   $y2=$img_height-$margins;
+                   $y1= $margins + $graph_height - intval($value * $ratio) ;
+                   $y2= $img_height-$margins;
                    imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
