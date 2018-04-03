@@ -112,7 +112,7 @@ pivot
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
 
-              $imgTest = imagepng($img);
+            //  $imgTest = imagepng($img);
               echo "<!<!DOCTYPE html>
               <html>
                   <head>
@@ -120,7 +120,7 @@ pivot
                   </head>
                   <body>
 <div>
-  <img src='$imgTest'
+  <img src=''
 </div>
                       <!-- Footer -->
                       <footer>
