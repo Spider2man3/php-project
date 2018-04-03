@@ -8,9 +8,7 @@
 
 
 
-        <?php
-
-
+<?php
 $serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
@@ -131,14 +129,10 @@ pivot
                    imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
+              header("Content-type:image/png");
               imagepng($img);
-               header("Content-type:image/png");
-
-               $_REQUEST['asdfad']=234234;
-
-
-
-        ?>
+              $_REQUEST['asdfad']=234234;
+?>
         <!-- Footer -->
         <footer>
             <a href="C:/wamp64/www/index.php">Home</a>
