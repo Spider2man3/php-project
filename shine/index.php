@@ -49,17 +49,11 @@ Order by dept_name";
                    echo "0 results <br>";
                }
                else {
-                 $num = sqlsrv_num_rows($result);
-                 if(sqlsrv_num_rows($result) > 0){
-                   while($row = sqlsrv_fetch_array($result)){
-                     $values[] = $row;
-                   }
-                 }
                    // output data of each row
-                //   while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+                  while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
                     //   echo ("<div style='display:none;'>". "<div>ID: ". $row["ID"]. " - Name: ". $row["name"]. " - Department: " . $row["dept_name"] . "</p></div>");
-                  //  $values[] = $row;
-                   //}
+                    $values[] = $row;
+                   }
                }
                echo "<pre>";
                print_r($values);
