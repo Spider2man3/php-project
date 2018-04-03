@@ -112,7 +112,7 @@ pivot
                    imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
                }
 
-              $imgTest = imagepng($img);
+
               echo ("<!DOCTYPE html>
               <html>
                   <head>
@@ -120,15 +120,15 @@ pivot
                   </head>
                   <body>
 <div>
-  <img src=''
-</div>
+  <img src='")imagepng($img);
+echo ("'</div>
                       <!-- Footer -->
                       <footer>
                           <a href='../index.php'>Home</a>
                           <a href='../maze/index.php'>Shine Project</a>
                       </footer>
                 </body>
-              </html>>");
+              </html>");
               $_REQUEST['asdfad']=234234;
 
 ?>
