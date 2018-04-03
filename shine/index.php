@@ -1,9 +1,8 @@
 <html>
-    <head>
-        <title>Shine</title>
-
-    </head>
-    <body>
+<head>
+<title>Shine</title>
+</head>
+<body>
 <?php
 header("Content-type:image/png");
 
