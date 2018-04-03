@@ -58,7 +58,7 @@ Order by dept_name";
                $list = array();
 
                foreach ($values as $key => $value) {
-                  echo $values[$value]['dept_name'];
+                  echo $values[$key]['dept_name'];
                }
                echo "<pre>";
                print_r($values);
