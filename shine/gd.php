@@ -114,7 +114,7 @@ pivot
                }
               imagepng($img);
               $_REQUEST['asdfad']=234234;
-              imagedestroy($img);
+            
 
 
 ?>
