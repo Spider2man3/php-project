@@ -44,6 +44,8 @@ pivot
                     $list[] = $row;
                    }
                }
+               echo "<pre>";
+               print_r($list);
                $values=array(
                    "Jan" => 110,
                    "Feb" => 130,
@@ -59,8 +61,8 @@ pivot
                    "Dec" => 196
                );
 
-echo "<pre>";
-print_r($values);
+            echo "<pre>";
+            print_r($values);
 
                $img_width=450;
                $img_height=300;
