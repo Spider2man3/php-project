@@ -5,10 +5,11 @@
 
     </head>
     <body>
+      <p>FUKC YOkjjU </p>
       <canvas id="myCanvas" style="background: white;"></canvas>
     <legend for="myCanvas"></legend>
   <script type="text/javascript" src="script.js"></script>
-
+  <a>FUKC YOjjjU </a>
         <?php
 
 
@@ -44,8 +45,8 @@ if( $conn ) {
         ?>
         <!-- Footer -->
         <footer>
-            <a href="../index.php">Home</a>
-            <a href="../maze/index.php">Maze Project</a>
+            <a href="C:/wamp64/www/index.php">Home</a>
+            <a href="C:/wamp64/www/maze/index.php">Maze Project</a>
         </footer>
 	</body>
 </html>
