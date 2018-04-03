@@ -73,8 +73,6 @@ pivot
                    "Nov" => 150,
                    "Dec" => 196
                );
-               echo "<pre>";
-               print_r($values);
 
                $img_width=450;
                $img_height=300;
