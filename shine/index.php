@@ -47,13 +47,10 @@ pivot
                }
                foreach ($list as $item => $array) {
                  foreach ($array as $key => $value) {
-                   echo $key;
-                   echo $value;
                    $values += [$key => $value];
                  }
                }
-            echo "<pre>";
-            print_r($values);
+
 
                $img_width=450;
                $img_height=300;
