@@ -4,7 +4,9 @@
         <title>Shine</title>
 
     </head>
-    <body><?php
+    <body>
+<?php
+ob_start();
 $serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
@@ -128,6 +130,7 @@ pivot
               header("Content-type:image/png");
               imagepng($img);
               $_REQUEST['asdfad']=234234;
+ ob_end_flush();
 ?>
         <!-- Footer -->
         <footer>
