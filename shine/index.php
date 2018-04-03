@@ -32,7 +32,17 @@ if( $conn ) {
      die( print_r( sqlsrv_errors(), true));
    }
  $values = array()
- $sql = "SELECT * from student";
+ $sql = "select Ratio.dept_name,Ratio.ratio
+from (
+	select department.dept_name, department.building, sum(credits) / instructorCount.total_instructor as ratio
+	from department,course, (select department.dept_name, count(id) as total_instructor
+		from instructor,department
+		where instructor.dept_name = department.dept_name
+		group by department.dept_name) as instructorCount
+	where department.dept_name = course.dept_name and department.dept_name = instructorCount.dept_name
+	group by department.dept_name,building,instructorCount.total_instructor
+	) as Ratio
+Order by dept_name";
  $result = sqlsrv_query($conn, $sql);
                if ($result == FALSE) {
                    echo "0 results <br>";
