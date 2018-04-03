@@ -3,7 +3,7 @@
         <title>Shine</title>
     </head>
     <body>
-<img src='<?php include 'gd.php'; ?>' />
+<img src="gd.php" />
         <!-- Footer -->
         <footer>
             <a href="../index.php">Home</a>
