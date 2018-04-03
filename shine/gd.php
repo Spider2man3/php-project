@@ -1,6 +1,5 @@
 <?php
 header("Content-type:image/png");
-function img() {
 $serverName = "localhost";
 $port = "1433";
 $username = "adamsbala";
@@ -115,5 +114,5 @@ pivot
                }
               imagepng($img);
               $_REQUEST['asdfad']=234234;
-            }
+
 ?>
