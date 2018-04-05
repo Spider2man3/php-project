@@ -16,14 +16,39 @@ class Enemy extends Maze {
 }
 
 class Fork extends Maze {
+    private $left, $right;
+
+    public function __construct($left, $right) {
+        $this->left = $left;
+        $this->right = $right;
+    }
+
     protected function getDescription() {
         return "You've found a fork, now which way do you go???";
+    }
+
+    public function goLeft() {
+        $this->left->description();
+    }
+
+    public function goRight() {
+        $this->right->description();
     }
 }
 
 class Hallway extends Maze {
+    private $hall;
+
+    public function __construct($hall) {
+        $this->hall = $hall;
+    }
+
     protected function getDescription() {
         return "You've entered a hallway...";
+    }
+
+    public function goAhead() {
+        $this->left->description();
     }
 }
 
@@ -40,28 +65,42 @@ class Exits extends Maze {
 }
 
 class Entrance extends Maze {
+    private $maz;
+
+    public function __construct($maze) {
+        $this->maz = $maze;
+    }
+
     protected function getDescription() {
-        return "Welcome to a new maze. If you find the exit without getting killed, you'll be crowned Prince of Egypt!";
+        return "Welcome to a new maze. If you find the exit without getting killed, you'll be crowned Prince of Egypt!
+                <button type='button' onclick='begin'>Start</button>";
+    }
+
+    public function play() {
+        $this->maz->description();
     }
 }
 
 $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : null;
 
 if ($q === "start") {
-    $maze = new Entrance;
+    $maze = new Entrance(new Exit);
     $maze->description();
 }
+elseif ($q === "begin") {
+
+}
 /*
-elseif ($q == "yes") {
+elseif ($q === "yes") {
 
 }
-elseif ($q == "no") {
+elseif ($q === "no") {
 
 }
-elseif ($q == "left") {
+elseif ($q === "left") {
 
 }
-elseif ($q == "right") {
+elseif ($q === "right") {
 
 }*/
 
