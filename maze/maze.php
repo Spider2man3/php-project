@@ -11,7 +11,8 @@ abstract class Maze {
 
 class Enemy extends Maze {
     protected function getDescription() {
-        return "You found the exit! Hooray!!! Well, there's an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2>";
+        return "You found the exit! Hooray!!! Well, there's an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2><br />Would you like to start over?<br />
+        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
 
@@ -54,21 +55,23 @@ class Hallway extends Maze {
 
 class DeadEnd extends Maze {
     protected function getDescription() {
-        return "You got stuck in this place because you just found a DEAD END!!!";
+        return "You got stuck in this place because you just found a DEAD END!!!<br />Would you like to start over?<br />
+        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
 
 class Exits extends Maze {
     protected function getDescription() {
-        return "Hey, not bad, you actually finished this maze! Good job!";
+        return "Hey, not bad, you actually finished this maze! Good job!<br />Would you like to start over?<br />
+        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
 
 class Entrance extends Maze {
     private $maz;
 
-    public function __construct($maze) {
-        $this->maz = $maze;
+    public function __construct($maz) {
+        $this->maz = $maz;
     }
 
     protected function getDescription() {
@@ -78,6 +81,7 @@ class Entrance extends Maze {
 
     public function play() {
         $this->maz->description();
+        $maze = $this->maz;
     }
 }
 
