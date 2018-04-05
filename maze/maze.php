@@ -1,33 +1,67 @@
 <?php
 
-class Maze {
+abstract class Maze {
 
-    private $description;
+    abstract protected function getDescription();
 
-    public function __construct($description) {
-        $this->description = $description;
+    public function description() {
+        print "<p>" . $this->getDescription . "</p>";
     }
+}
 
-    public function getDescription() {
-        return $this->description;
+class Enemy extends Maze {
+    protected function getDescription() {
+        return "You found the exit! Hooray!!! Well, there's an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2>";
     }
+}
 
-    /*
-    <?php 
-            foreach (glob("*.php") as $filename) {
-                include $filename;
-            }
-            include ('enemy.php'); 
-            
-            $food = new Enemy('Foodie Monster', 50, 50);
+class Fork extends Maze {
+    protected function getDescription() {
+        return "You've found a fork, now which way do you go???";
+    }
+}
 
-            echo '<div style="margin:auto;width:20%;text-align:center;position:relative;">';
-                echo '<h1>Welcome to the LEAP Maze!</h1>';
-                echo '<h3>By Thomas Manu</h3>';
-                echo $food->greet();
-            echo '</div>'
-        ?>
-        */
+class Hallway extends Maze {
+    protected function getDescription() {
+        return "You've entered a hallway...";
+    }
+}
+
+class DeadEnd extends Maze {
+    protected function getDescription() {
+        return "You got stuck in this place because you just found a DEAD END!!!";
+    }
+}
+
+class Exits extends Maze {
+    protected function getDescription() {
+        return "Hey, not bad, you actually finished this maze! Good job!";
+    }
+}
+
+class Entrance extends Maze {
+    protected function getDescription() {
+        return "Welcome to a new maze. If you find the exit without getting killed, you'll be crowned Prince of Egypt!";
+    }
+}
+
+$q = $_REQUEST["q"];
+
+if ($q == "start") {
+    $maze = new Entrance;
+}
+
+elseif ($q == "yes") {
+
+}
+elseif ($q == "no") {
+
+}
+elseif ($q == "left") {
+
+}
+elseif ($q == "right") {
+
 }
 
 ?>

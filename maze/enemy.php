@@ -1,5 +1,12 @@
 <?php
 
+class Enemy extends Maze {
+    protected function getDescription() {
+        return "You have been killed by Pharah...";
+    }
+}
+
+/*
 class Enemy {
     public $enemyName;
     public $health;
@@ -24,4 +31,5 @@ class Enemy {
         }
     }
 }
+*/
 ?>

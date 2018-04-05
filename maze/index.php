@@ -8,8 +8,10 @@
         <div style="margin:auto;width:30%;text-align:center;position:relative;">
             <h1>Welcome to the LEAP Maze!</h1>
             <h3>By Thomas Manu</h3>
-            <button type="button" onclick="foo()">Click</button>
-            <p id="demo">AJAX should change this</p>
+            <div id="demo">
+                AJAX should change this
+            </div>
+            <button type="button" onclick="start()">Click</button>
         </div>
         <!-- Footer -->
         <footer>
