@@ -11,7 +11,7 @@
             <div id="demo">
                 AJAX should change this
             </div>
-            <button type="button" onclick="start()">Click</button>
+            <button type="button" onclick="call('start')">Click</button>
         </div>
         <!-- Footer -->
         <footer>

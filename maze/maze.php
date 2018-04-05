@@ -51,7 +51,7 @@ if ($q == "start") {
     $maze = new Entrance;
     $maze->getDescription();
 }
-
+/*
 elseif ($q == "yes") {
 
 }
@@ -63,6 +63,6 @@ elseif ($q == "left") {
 }
 elseif ($q == "right") {
 
-}
+}*/
 
 ?>
