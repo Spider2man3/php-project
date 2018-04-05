@@ -4,14 +4,11 @@
         <title>Maze</title>
         <script type="text/javascript" src="ajax.js"></script>
     </head>
-    <body>
+    <body onload="call('start')">
         <div style="margin:auto;width:50%;text-align:center;position:relative;">
             <h1>Welcome to the LEAP Maze!</h1>
             <h3>By Thomas Manu</h3>
-            <div id="demo">
-                AJAX should change this
-                <button type="button" onclick="call('start')">Click</button>
-            </div>
+            <div id="demo"></div>
         </div>
         <!-- Footer -->
         <footer>
