@@ -31,10 +31,12 @@ class Fork extends Maze {
 
     public function goLeft() {
         $this->left->description();
+        $_SESSION['maze'] = $this->left;
     }
 
     public function goRight() {
         $this->right->description();
+        $_SESSION['maze'] = $this->right;
     }
 }
 
@@ -51,6 +53,7 @@ class Hallway extends Maze {
 
     public function goAhead() {
         $this->left->description();
+        $_SESSION['maze'] = $this->hall;
     }
 }
 
