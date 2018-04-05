@@ -52,7 +52,7 @@ class Hallway extends Maze {
     }
 
     public function goAhead() {
-        $this->left->description();
+        $this->hall->description();
         $_SESSION['maze'] = $this->hall;
     }
 }
