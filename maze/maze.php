@@ -88,7 +88,7 @@ if ($q === "start") {
     $maze->description();
 }
 elseif ($q === "begin") {
-    $maze->description();
+    $maze->play();
 }
 /*
 elseif ($q === "yes") {
