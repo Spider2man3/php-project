@@ -5,7 +5,7 @@ abstract class Maze {
     abstract protected function getDescription();
 
     public function description() {
-        print "<p>" . $this->getDescription . "</p>";
+        echo "<p>" . $this->getDescription . "</p>";
     }
 }
 
@@ -45,7 +45,7 @@ class Entrance extends Maze {
     }
 }
 
-$q = $_REQUEST["q"];
+$q = isset($_REQUEST['q']) ? $_REQUEST['q'] : null;
 
 if ($q === "start") {
     $maze = new Entrance;
