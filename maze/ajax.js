@@ -5,7 +5,7 @@ function start() {
             document.getElementById("demo").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "maze.php?q=start", true);
+    xhttp.open("POST", "maze.php?q=start", true);
     xhttp.send();
 }
 
