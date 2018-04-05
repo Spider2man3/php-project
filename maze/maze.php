@@ -2,7 +2,9 @@
 
 session_start();
 
-abstract class Maze {
+
+// The main maze abstract class
+abstract class Maze { 
 
     abstract protected function getDescription();
 
@@ -93,7 +95,9 @@ class Entrance extends Maze {
     }
 }
 
+// Read the queries from the url to find the right function at the if statement
 $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : null;
+// Pull the current maze from the session (only a maze if game has been started)
 $maze = $_SESSION['maze'];
 
 if ($q === "start") {

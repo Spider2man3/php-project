@@ -1,3 +1,5 @@
+// Call function calls the php function from an HTML button
+// and calls the appropriate one using url queries
 function call(str) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
