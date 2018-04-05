@@ -5,7 +5,7 @@ abstract class Maze {
     abstract protected function getDescription();
 
     public function description() {
-        echo "<p>" . $this->getDescription . "</p>";
+        print "<p>" . $this->getDescription() . "</p>";
     }
 }
 
