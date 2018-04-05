@@ -101,13 +101,15 @@ elseif ($q === "begin") {
     $maze->play();
 }
 elseif ($q === "continue") {
+    $maze->goAhead();
 
 }
 elseif ($q === "left") {
+    $maze->goLeft();
 
 }
 elseif ($q === "right") {
-
+    $maze->goRight();
 }
 
 ?>
