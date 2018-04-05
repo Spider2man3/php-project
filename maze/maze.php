@@ -13,7 +13,7 @@ abstract class Maze {
 
 class Enemy extends Maze {
     protected function getDescription() {
-        return 'You found the exit! Hooray!!! Well, there\'s an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2><br />Would you like to start over?<br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
+        return 'You found the exit! Hooray!!! Well, there\'s an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2><br />Would you like to start over?<br /><button type=\'button\' onclick="call(\'start\')">Start Over</button>';
     }
 }
 
@@ -62,14 +62,14 @@ class Hallway extends Maze {
 class DeadEnd extends Maze {
     protected function getDescription() {
         return 'You got stuck in this place because you just found a DEAD END!!!<br />Would you like to start over?
-        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
+        <br /><button type=\'button\' onclick="call(\'start\')">Start Over</button>';
     }
 }
 
 class Exits extends Maze {
     protected function getDescription() {
         return 'Hey, not bad, you actually finished this maze! Good job!<br />Would you like to start over?
-        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
+        <br /><button type=\'button\' onclick="call(\'start\')">Start Over</button>';
     }
 }
 
