@@ -49,6 +49,7 @@ $q = $_REQUEST["q"];
 
 if ($q == "start") {
     $maze = new Entrance;
+    $maze->getDescription();
 }
 
 elseif ($q == "yes") {
