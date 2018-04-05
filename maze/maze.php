@@ -84,7 +84,7 @@ class Entrance extends Maze {
 $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : null;
 
 if ($q === "start") {
-    $maze = new Entrance(new Exit);
+    $maze = new Entrance(new Exits);
     $maze->description();
 }
 elseif ($q === "begin") {
