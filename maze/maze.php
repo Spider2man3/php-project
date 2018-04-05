@@ -26,7 +26,9 @@ class Fork extends Maze {
     }
 
     protected function getDescription() {
-        return "You've found a fork, now which way do you go???";
+        return 'You\'ve found a fork, now which way do you go???<br />
+                <button type=\'button\' onclick="call(\'left\')">Left</button>
+                <button type=\'button\' onclick="call(\'right\')">Right</button>';
     }
 
     public function goLeft() {
