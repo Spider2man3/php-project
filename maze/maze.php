@@ -47,7 +47,7 @@ class Entrance extends Maze {
 
 $q = $_REQUEST["q"];
 
-if ($q == "start") {
+if ($q === "start") {
     $maze = new Entrance;
     $maze->getDescription();
 }
