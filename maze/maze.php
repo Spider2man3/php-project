@@ -11,8 +11,7 @@ abstract class Maze {
 
 class Enemy extends Maze {
     protected function getDescription() {
-        return "You found the exit! Hooray!!! Well, there's an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2><br />Would you like to start over?<br />
-        <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
+        return 'You found the exit! Hooray!!! Well, there\'s an enemy called Exam right in front of you, and he killed you.<br /><h2>Game Over...</h2><br />Would you like to start over?<br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
 
