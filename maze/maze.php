@@ -54,14 +54,14 @@ class Hallway extends Maze {
 
 class DeadEnd extends Maze {
     protected function getDescription() {
-        return "You got stuck in this place because you just found a DEAD END!!!<br />Would you like to start over?<br />
+        return 'You got stuck in this place because you just found a DEAD END!!!<br />Would you like to start over?
         <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
 
 class Exits extends Maze {
     protected function getDescription() {
-        return "Hey, not bad, you actually finished this maze! Good job!<br />Would you like to start over?<br />
+        return 'Hey, not bad, you actually finished this maze! Good job!<br />Would you like to start over?
         <br /><button type=\'button\' onclick="call(\'start\')">Start</button>';
     }
 }
