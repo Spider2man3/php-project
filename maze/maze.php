@@ -83,7 +83,7 @@ class Entrance extends Maze {
     }
 
     protected function getDescription() {
-        return 'Welcome to a new maze. If you find the exit without getting killed, you\'ll be crowned Prince of Egypt!
+        return '<h3>Welcome to a new maze.</h3><br /> If you find the exit without getting killed, you\'ll be crowned Prince of Egypt!
                 <br /><button type=\'button\' onclick="call(\'begin\')">Start</button>';
     }
 
