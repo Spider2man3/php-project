@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 abstract class Maze {
 
     abstract protected function getDescription();
@@ -44,7 +46,7 @@ class Hallway extends Maze {
     }
 
     protected function getDescription() {
-        return "You've entered a hallway...";
+        return 'You\'ve entered a hallway, click the button below to continue onwards into the abyss...<br /><button type=\'button\' onclick="call(\'continue\')">Continue</button>';
     }
 
     public function goAhead() {
@@ -80,24 +82,22 @@ class Entrance extends Maze {
 
     public function play() {
         $this->maz->description();
-        $maze = $this->maz;
+        $_SESSION['maze'] = $this->maz;
     }
 }
 
 $q = isset($_REQUEST['q']) ? $_REQUEST['q'] : null;
-$maze = new Entrance(new Hallway(new Fork(new Fork(new Hallway(new DeadEnd), new Enemy()), new Exits)));
+$maze = $_SESSION['maze'];
 
 if ($q === "start") {
+    $maze = new Entrance(new Hallway(new Fork(new Fork(new Hallway(new DeadEnd), new Enemy()), new Exits)));
+    $_SESSION['maze'] = $maze;
     $maze->description();
 }
 elseif ($q === "begin") {
     $maze->play();
 }
-/*
-elseif ($q === "yes") {
-
-}
-elseif ($q === "no") {
+elseif ($q === "continue") {
 
 }
 elseif ($q === "left") {
@@ -105,6 +105,6 @@ elseif ($q === "left") {
 }
 elseif ($q === "right") {
 
-}*/
+}
 
 ?>
